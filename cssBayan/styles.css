@@ -8,5 +8,64 @@
 
 body {
   font-family: 'Climate Crisis', cursive;
-  background-color: azure;
+  width: 100%;
+  height: 100%;
+}
+
+summary {
+  display: block;
+  margin-left: 0.2em;
+}
+
+summary::-webkit-details-marker {
+  display: none;
+}
+
+summary::after {
+  content: "\2b";
+  margin-right: 0.2em;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 20px auto;
+}
+
+.row {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(174, 219, 204);
+  color: rgb(213, 218, 218);
+  padding: 20px;
+}
+
+.accordion {
+  max-width: 320px;
+  min-height: 568px;
+  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+  color: rgb(57, 57, 212);
+}
+
+.accordion:hover {
+  color: rgb(243, 56, 56);
+}
+
+.accordion_title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.accordion_img {
+  width: 320px;
+}
+
+.icon {
+  display: block;
 }
