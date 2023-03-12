@@ -21,8 +21,17 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-summary::after {
+.accordion:hover>details {
+  color: blueviolet;
+}
+
+details:hover>summary::after {
   content: "\2b";
+  margin-right: 0.2em;
+}
+
+details[open]>summary::after {
+  content: "\274c";
   margin-right: 0.2em;
 }
 
@@ -53,17 +62,13 @@ summary::after {
   color: rgb(57, 57, 212);
 }
 
-.accordion:hover {
-  color: rgb(243, 56, 56);
-}
-
 .accordion_title {
   display: flex;
   justify-content: space-between;
 }
 
 .accordion_img {
-  width: 320px;
+  width: 100%;
 }
 
 .icon {
